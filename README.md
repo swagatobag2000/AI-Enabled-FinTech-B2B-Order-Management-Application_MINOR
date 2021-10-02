@@ -4,11 +4,10 @@
 This project was submitted as a minor project in partial fulfillment of the requirements for the award of the Degree of Bachelor of Technology in Discipline of Engineering
 ```
 
+https://user-images.githubusercontent.com/46164852/135722773-da373fe1-ee84-4f88-8600-0d7c311ba1ef.mp4
+
+
 <div align="center">
-  <video controls>
-    <source src="images/Presentation.mp4" type="video/mp4"><br/>
-  </video>
-  <p>MINOR Project Demo</p><br/>
   <a href="https://youtu.be/ADMaU7DLlt0">Watch it on Youtube</a>
 </div>
 
@@ -40,21 +39,6 @@ In this project, we ask two questions about a new business invoice when giving i
 <img src="images/amount.png" height="250em"/>&emsp;<img src="images/delay.png" height="250em"/><br/>
 - From the first plot, we can observe that most of the open amount is in between 0-100,000 i.e. very less number of customers are there whose high amounts are pending.
 - From the second curve, we can observe, most of the customers delay for a period mostly between 0-50.
-### JAVA + REACTJS - APPLICATION DEVELOPMENT
-The application development part is related to building a web-based application that consists of a frontend dashboard displaying the data in a tabular form with different options like add, delete, edit and predict, connected to a backend database. We have created a beautiful user interface to add, edit, delete, print, and most importantly, predict order invoices with ReactJS. For this we have followed certain steps :
-- <b>Loading of Data in the Database</b>
-  - The data was loaded in the database using SQLYOG and all tables and queries were created and successfully displayed. This was done by creating a raw CSV reader module from scratch. This module can read CSV files and can process the data to input into the database with the help of the JDBC Driver class.
-- <b>Creation of the Backend</b>
-  - The backend portion was done in Java. The first JDBC connection was established with SQL. Then servlets were created for every functionality.
-    - Add servlet - POST request from the frontend with parameters such as invoice amount, notes, date, etc and pass them to the SQL database to add a new order to the database
-    - Edit Servlet - POST request from the frontend with parameters such as doc_id to identify the invoice in addition to the parameters which need to be changed.
-    - Delete Servlet - Delete the selected invoices from the database, by passing their respective doc_id’s to identify them in the database.
-    - Search Servlet - Get the invoice number from the frontend and pass them as an HTTP request and search through the database and return it to the frontend again.
-    - Data Display Servlet - Display the table of invoices to the frontend UI.
-- <b>Creating a Responsive Dashboard</b>
-  - A responsive dashboard was made in React Js. The main page had a Head Section, comprised of the company logo and account name logo, and then the Grid Section, comprised of a panel having Add, Delete, Edit, and search button. The Predicted Payment Date will remain blank and selecting one or multiple rows and then clicking on predict will get the payment date populated. Whenever multiple rows are selected the add button will remain activated and the user can type in the value he/she wants to insert. Also, the user has to fill all the required fields otherwise insertion won’t happen. Clicking on the edit button permits the user to edit all the editable columns, but only when one row is selected. With the help of the delete button, the user can delete one or more pre-existing data. The search button helps to look for particular data. View Correspondence button will help to print the invoices of one or more orders. All these functionalities were carried out by using material-UI and establishing a connection with the backend.
-- <b>Flask Integration</b>
-  - Finally, integration of the ML model was done with help of the flask module. First, one .pickle file was generated then using some lines of python script flask integration was done. As same as the servlet used as an API for the functionalities, for the prediction also some POST request was made using this .pickle file. And finally, the project is complete.
 
 ## Result
 
@@ -70,6 +54,38 @@ The application development part is related to building a web-based application 
   <img src="images/bucket.png"/><br/>
   <p>Fig: Bucketization</p>
 </div>
+
+### SQL + JAVA + REACTJS - APPLICATION DEVELOPMENT
+The application development part is related to building a web-based application that consists of a frontend dashboard displaying the data in a tabular form with different options like add, delete, edit and predict, connected to a backend database. We have created a beautiful user interface to add, edit, delete, print, and most importantly, predict order invoices with ReactJS. For this we have followed certain steps :
+- <b>Loading of Data in the Database</b>
+  - The data was loaded in the database using SQLYOG and all tables and queries were created and successfully displayed. This was done by creating a raw CSV reader module from scratch. This module can read CSV files and can process the data to input into the database with the help of the JDBC Driver class.
+
+<div align="center">
+  <img src="images/Java.jpg"/><br/>
+  <p>Fig:Java for Data Storing</p>
+</div>
+
+<div align="center">
+  <img src="images/sql.jpg"/><br/>
+  <p>Fig: Data Inserted into SQLyog</p>
+</div>
+
+- <b>Creation of the Backend</b>
+  - The backend portion was done in Java. The first JDBC connection was established with SQL. Then servlets were created for every functionality.
+    - Add servlet - POST request from the frontend with parameters such as invoice amount, notes, date, etc and pass them to the SQL database to add a new order to the database
+    - Edit Servlet - POST request from the frontend with parameters such as doc_id to identify the invoice in addition to the parameters which need to be changed.
+    - Delete Servlet - Delete the selected invoices from the database, by passing their respective doc_id’s to identify them in the database.
+    - Search Servlet - Get the invoice number from the frontend and pass them as an HTTP request and search through the database and return it to the frontend again.
+    - Data Display Servlet - Display the table of invoices to the frontend UI.
+
+<div align="center">
+  <img src="images/java_servlet.jpg"/><br/>
+  <p>Fig: Java Servlets</p>
+</div>
+
+- <b>Creating a Responsive Dashboard</b>
+  - A responsive dashboard was made in React Js. The main page had a Head Section, comprised of the company logo and account name logo, and then the Grid Section, comprised of a panel having Add, Delete, Edit, and search button. The Predicted Payment Date will remain blank and selecting one or multiple rows and then clicking on predict will get the payment date populated. Whenever multiple rows are selected the add button will remain activated and the user can type in the value he/she wants to insert. Also, the user has to fill all the required fields otherwise insertion won’t happen. Clicking on the edit button permits the user to edit all the editable columns, but only when one row is selected. With the help of the delete button, the user can delete one or more pre-existing data. The search button helps to look for particular data. View Correspondence button will help to print the invoices of one or more orders. All these functionalities were carried out by using material-UI and establishing a connection with the backend.
+
 <div align="center">
   <img src="images/Main ui.png"/><br/>
   <p>Fig: Main UI</p>
@@ -95,6 +111,10 @@ The main UI page consists of the HighRadius logo in the upper middle, the compan
   <img src="images/predict.jpg"/><br/>
   <p>Fig: Predict Button</p>
 </div>
+
+### Flask Integration
+Finally, integration of the ML model was done with help of the flask module. First, one .pickle file was generated then using some lines of python script flask integration was done. As same as the servlet used as an API for the functionalities, for the prediction also some POST request was made using this .pickle file. And finally, the project is complete.
+
 <div align="center">
   <img src="images/flask.jpg"/><br/>
   <p>Fig: Working of Flask Server</p>
