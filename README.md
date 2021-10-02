@@ -62,7 +62,7 @@ The application development part is related to building a web-based application 
 
 <div align="center">
   <img src="images/Java.jpg"/><br/>
-  <p>Fig:Java for Data Storing</p>
+  <p>Fig: Java for Data Storing</p>
 </div>
 
 <div align="center">
