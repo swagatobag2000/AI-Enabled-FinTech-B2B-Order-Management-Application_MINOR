@@ -17,10 +17,12 @@ https://user-images.githubusercontent.com/46164852/135722773-da373fe1-ee84-4f88-
 </div>
 
 ## Abstract
-The B2B world operates differently from the B2C or C2C world. Businesses work with other businesses on credit. When a buyer business orders something from the seller business, the seller business issues an invoice for that order. This invoice contains various information like the details of the goods purchased and when they should be paid. <br/>
+The B2B world operates differently from the B2C or C2C world. Businesses work with other businesses on credit. When a buyer business orders something from the seller business, the seller business issues an invoice for that order. This invoice contains various information like the details of the goods purchased and when they should be paid.<br/>
 Seller business interacts with various businesses and sells goods to all of them at various times. Hence, the seller business needs to keep track of the total amount it owes from all the buyers. This involves keeping track of all invoices from all the buyers. The buyer business needs to clear its amount due before the due date.<br/>
 However, in real-world scenarios, the invoices are not always cleared i.e. paid in full amount by the due date.<br/>
-So my project should help the Account Receivables team by collecting payments from customers for their past dues, sending reminders and follow-ups to the customers for payments to be made, and help the company get paid for the services and products supplied.<br/>
+The problem is to create an application for managing B2B order invoices. We have to build a Machine Learning Model to predict the payment date of an invoice when it gets created in the system and categorize the invoice into different buckets based on the predicted payment date, and this whole process should be managed by a beautiful UI.<br/>
+In this given project we were required to make a full-stack Order Management application backed by a Machine Learning Model to predict the date of payment and ageing bucket of an invoice.<br/>
+So my project i.e. “AI-enabled FinTech B2B Order Management System” should help the Account Receivables team by collecting payments from customers for their past dues, sending reminders and follow-ups to the customers for payments to be made, and help the company get paid for the services and products supplied.<br/>
 
 ### OVERVIEW
 In this given project we were required to make a full-stack Order Management application backed by a Machine Learning Model to predict the date of payment and aging bucket of an invoice.
