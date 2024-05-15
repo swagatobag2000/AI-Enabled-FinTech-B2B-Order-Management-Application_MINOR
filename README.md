@@ -6,7 +6,7 @@ This project was submitted as a minor project in partial fulfillment of the requ
 
 Project Link (Access Restricted due to Copyright) -
 ```
-
+https://github.com/swagatobag2000/AI-Enabled-FinTech-B2B-Order-Management-Application_MINOR-codebase
 ```
 
 https://user-images.githubusercontent.com/46164852/135722773-da373fe1-ee84-4f88-8600-0d7c311ba1ef.mp4
